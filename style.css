@@ -1,0 +1,444 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(9, 7, 7);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url(imagenes/super.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo-header {
+    height: 20%;
+    margin: 5%;
+}
+
+.img-header {
+    width: 10%;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 68%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 4, 255);
+    text-shadow: 5px 5px 5px black;
+}
+
+.titulo h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.navegador {
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background-color: black;
+}
+
+.navegador ul {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navegador ul li {
+    display: inline;
+}
+
+.navegador ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+a:hover {
+    color: rgb(254, 254, 255) !important;
+}
+
+@media screen and (max-width: 500px) { 
+    .navegador ul {
+        font-size: 8px;
+    }
+    
+}
+
+@media screen and (max-width: 560px)
+{
+    .img-header {
+        width: 20%;
+    }
+
+    .titulo h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .navegador ul {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+.contenedor-boton {
+    width: 5%;
+    height: 0.1%;
+    display: flex;
+    position: sticky;
+    float: right;
+    padding: 10px;
+    top: 90%;
+}
+
+.botonestatico a img {
+    width: 80px;
+}
+
+
+.secciones {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+    border-radius: 30px;
+    background-color: rgb(248, 219, 219);
+    border: 2px solid black;
+    margin-top: 8%;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+#almacen {
+    width: 80%;
+}
+
+.div-seccion-name {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.div-der {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.card-lateral {    
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 40%;
+    margin-top: 20px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    box-shadow: 8px 8px 10px black;
+}
+
+.img-prod-lateral {
+    width: 55%;
+    height: 70%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 5px 10px white;
+}
+
+.prod1 {
+    background-image: url(imagenes/leche.jpg);
+}
+
+.prod2 {
+    background-image: url(imagenes/tomate.jpg);
+}
+
+.prod3 {
+    background-image: url(imagenes/choclo.jpg);
+}
+
+.prod4 {
+    background-image: url(imagenes/sal.jpg);
+}
+
+
+.prod5 {
+    background-image: url(imagenes/aceite.jpg);
+}
+
+
+.prod6 {
+    background-image: url(imagenes/arvejas.jpg);
+}
+
+.info-prod {
+    padding: 10px;
+}
+
+@media screen and (max-width: 560px) {
+    .seccion-izq {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .div-seccion-name {
+        display: flex;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+    }
+
+    .div-der {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 90%;
+    }
+
+    .card-lateral {
+        width: 45%;
+        height: 25%;
+        margin-top: 5px;
+    }
+
+    .contenedor-boton {
+        margin-right: 15px;
+        top: 80%;
+    }
+
+    .botonestatico a img {
+        width: 50px;
+    }
+}
+
+#carniceria {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-seccion-name-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-card-centro
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 35%;
+    height: 40%;
+    margin-top: 20px;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    box-shadow: 8px 8px 10px black;
+}
+
+.img-prod-centro {
+    height: 65%;
+}
+
+.prod1b {
+    background-image: url(imagenes/asado.jpg);
+}
+
+.prod2b {
+    background-image: url(imagenes/bife-angosto.jpg);
+}
+
+.prod3b {
+    background-image: url(imagenes/vacio.jpg);
+}
+
+.prod4b {
+    background-image: url(imagenes/chorizo.jpg);
+}
+
+.prod5b {
+    background-image: url(imagenes/morcilla.jpg);
+}
+
+
+.prod6b {
+    background-image: url(imagenes/chinchulin.jpg);
+}
+
+.prod7b {
+    background-image: url(imagenes/provoleta.jpg);
+}
+
+
+@media screen and (max-width:560px) {
+    
+    .seccion-centro {
+        display: flex;
+        flex-direction: column;
+        height: 140%;
+   }
+
+    .order1
+    {
+        display: flex;
+        order: -1;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+    }
+
+   
+    .container-card-centro-main {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: 45%;
+    }
+
+    .container-card-centro {
+        display: flex;
+        align-items: flex-start;
+        width: 45%;
+        height: 40%;
+        margin-top: 5px;
+    }
+}
+.pie-pag {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(254, 254, 254);
+    border-top: 2px solid black;
+}
+
+
+.texto-pie {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 2px;
+}
+
+.redes-pie {
+    width: 70%;
+    text-align: center;
+}
+
+.redes-pie ul {
+    list-style: none;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redes-pie ul li {
+    display: inline-block;
+}
+
+.redes-pie ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+
+.img-logo-footer {
+    width: 20px;
+}
+
+
+@media screen and (max-width:560px) {       
+
+    .pie-pag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-pie {
+        height: 20%;
+        font-size: 15px;
+        letter-spacing: 4px;
+    }
+
+    .redes-pie {
+        width: 100%;
+        height: 80%;
+    }
+
+    .redes-pie ul {
+        display: flex;
+        justify-content: space-evenly;
+    }  
+
+    .redes-pie ul li {
+        padding-left: 8px;
+    }
+
+    
+    .redes-pie ul li a {
+        padding: 10px;
+    }
+
+    .img-logo-footer {
+        width: 25px;
+    }
+
+
+}
